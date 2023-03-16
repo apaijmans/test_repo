@@ -1,0 +1,13 @@
+---
+title: "Rstudio workshop"
+author: "Paijmans"
+date: "`r Sys.Date()`"
+output: html_document
+---
+
+```{r}
+library(here)
+(file_path <- here("data", "iris.csv"))
+head(read.csv(file_path), n = 5)
+```
+
